@@ -1,0 +1,135 @@
+#container {
+    /* background-color: antiquewhite; */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#about_me, #publications, #awards {
+    margin-bottom: 40px;
+}
+
+#me_picture img {
+    width: 100%;
+}
+
+#name {
+    text-align: center;
+}
+
+#intro {
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+#intro a {
+    text-decoration:none;
+}
+
+#links {
+    text-align: center;
+    margin: 0 auto 0;
+}
+
+#links a {
+    text-decoration:none;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.pub_intro {
+    text-align: justify;
+}
+
+.pub_intro p {
+    margin-bottom: 0px;
+}
+
+.pub_intro small {
+    text-align: right;
+}
+
+.pub_title {
+    font-weight: bold;
+}
+
+.pub_author, .pub_conf, .pub_link {
+    text-align: left;
+}
+
+.pub_link a {
+    text-decoration: none;
+}
+
+.pub_item {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px;
+    border: 1px solid rgba(216, 216, 216);
+    position: relative;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.pub_item:after{
+    content: '';
+    display: block;
+    background: linear-gradient(to left, rgba(216, 216, 216, 0) 50%, rgba(216, 216, 216, 0.4) 50%);
+    background-size: 210% 100%;
+    background-position: right bottom;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    left: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    z-index: -1;
+}
+
+.pub_item:hover:after {
+    background-position: left bottom;
+}
+
+.pub_item:hover {
+    cursor: pointer;
+}
+
+.thumbnail {
+    padding-left: 0px;
+}
+
+.pub_intro {
+    padding-right: 0px;
+}
+
+#conter {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .thumbnail {
+        padding-left: 12px;
+    }
+    
+    .pub_intro {
+        padding-right: 12px;
+    }
+
+    #me_picture img {
+        width: 40%;
+        border-radius: 20%;
+        margin-left: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #container {
+        width: 960px;
+    }
+}
