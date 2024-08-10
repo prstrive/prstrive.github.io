@@ -197,12 +197,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    #container {
+    #container, #nav {
         margin-top: 0;
         margin-bottom: 0;
-        padding: 20px;
-    }
-    #nav {
         padding: 20px;
     }
     /* #nav_title {
