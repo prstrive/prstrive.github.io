@@ -3,32 +3,157 @@
 <head>
 <meta charset="utf-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="main.css" type="text/css">
 <title>Homepage of Rui Peng</title>
 </head>
  
 <body>
-    <div id="container" class="container">
-        <div class="row" id="about_me">
-            <div id="me_picture" class="col-md-4 col-lg-3">
-                <img src="files/head.jpg" alt="">
+    <nav id="nav" class="navbar navbar-expand-lg bg-light container sticky-top">
+        <!-- <div class="container-fluid"> -->
+            <a class="navbar-brand" id="nav_title" href="#">
+                <span data-text="R">R</span>
+                <span data-text="u">u</span>
+                <span data-text="i">i</span>
+                <span data-text="P">P</span>
+                <span data-text="e">e</span>
+                <span data-text="n">n</span>
+                <span data-text="g">g</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                </ul>
             </div>
-            <div id="me_intro" class="col-md-8 col-lg-9">
-                <h2 id="name">Rui Peng (彭 瑞)</h2>
-                <p id="intro">I'm currently a PHD candidate in National Engineering Research Center of Visual Technology at <a href="https://www.pku.edu.cn/">Peking University</a>, supervised by <a href="https://www.ece.pku.edu.cn/info/1073/2562.htm">Prof. Ronggang Wang</a>. <!-- I had the pleasure of working with <a href="https://scholar.google.com/citations?user=NfFTKfYAAAAJ&hl=zh-CN">Yitong Wang</a> at Bytedance and <a href="https://scholar.google.com/citations?user=aJPO514AAAAJ&hl=zh-CN">Xiaodong Gu</a> at Alibaba. --> Before that, I received my B. Eng. degree with honors at <a href="https://www.cqu.edu.cn/">Chongqing University</a> in 2020. My research interests always lie in the field of 3D vision, including depth estimation, multi-view stereo, neural rendering, surface reconstruction and gaussian splatting, and I have also recently been trying 3D generation. I'll graduate before Jul. 2025 and am looking for a suitable position in 3D vision! </p>
-                <div id="links" class="col-lg-9">
-                    <a href="ruipeng@stu.pku.edu.cn">Email</a> | <a href="https://github.com/prstrive">GitHub</a> | <a href="https://scholar.google.com/citations?user=Hfz_H50AAAAJ&hl=zh-CN&oi=sra">Google Scholar</a>
+        <!-- </div> -->
+    </nav>
+
+    <div id="container" class="container">
+        
+        <div id="about_me">
+            <div  class="row media" >
+                <div id="me_picture" class="col-md-4 col-lg-3 align-self-center mx-auto">
+                    <img src="files/head.jpg" alt="">
+                </div>
+                <div id="me_intro" class="col-md-8 col-lg-9 align-self-center mx-auto">
+                    <h2 id="name">Rui Peng (彭 瑞)</h2>
+                    <p id="intro">I'm currently a PHD candidate in National Engineering Research Center of Visual Technology at <a href="https://www.pku.edu.cn/">Peking University</a>, supervised by <a href="https://www.ece.pku.edu.cn/info/1073/2562.htm">Prof. Ronggang Wang</a>. <!-- I had the pleasure of working with <a href="https://scholar.google.com/citations?user=NfFTKfYAAAAJ&hl=zh-CN">Yitong Wang</a> at Bytedance and <a href="https://scholar.google.com/citations?user=aJPO514AAAAJ&hl=zh-CN">Xiaodong Gu</a> at Alibaba. --> Before that, I received my B. Eng. degree with honors at <a href="https://www.cqu.edu.cn/">Chongqing University</a> in 2020. My research interests always lie in the field of 3D vision, including depth estimation, multi-view stereo, neural rendering, surface reconstruction and gaussian splatting, and I'm greatly in interested with 3D recontruction, 3D AIGC, 3D large model and multimodal. I'll graduate before Jul. 2025 and am looking for a suitable position! </p>
+                    <div id="links" class="col-lg-9">
+                        <a href="mailto:ruipeng@stu.pku.edu.cn"><i class="bi bi-envelope-fill"></i> Email</a> | <a href="https://github.com/prstrive"><i class="bi bi-github"></i> GitHub</a> | <a href="https://scholar.google.com/citations?user=Hfz_H50AAAAJ&hl=zh-CN&oi=sra"><i class="bi bi-mortarboard-fill"></i> Google Scholar</a>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div id="publications">
             <h3>Publications</h3><hr style="margin-top: 10px;"/>
 
-            <div class="pub_item row">
-                <div class="col-md-4 thumbnail">
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
+                    <img src="pubs/scgaussian/sample.png" alt="">
+                </div>
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
+                    <div class="intro_container">
+                        <p class="pub_title">Structure Consistent Gaussian Splatting with Matching Prior for Few-shot Novel View Synthesis</p>
+                        <p class="pub_author"><strong>Rui Peng</strong>, Wangze Xu, Luyang Tang, Liwei Liao, Jianbo Jiao, Ronggang Wang</p>
+                        <p class="pub_conf"><i>Under review</i></p>
+                        <p class="pub_link">Paper | Code</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
+                    <img src="pubs/surf/sample.png" alt="">
+                </div>
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
+                    <div class="intro_container">
+                        <p class="pub_title">Surface-Centric Modeling for High-Fidelity Generalizable Neural Surface Reconstruction</p>
+                        <p class="pub_author"><strong>Rui Peng</strong>, Shihe Shen, Kaiqiang Xiong, Huachen Gao, Jianbo Jiao, Xiaodong Gu, Ronggang Wang</p>
+                        <p class="pub_conf"><i>ECCV, 2024</i></p>
+                        <p class="pub_link">Paper (<i>Patent Pending</i>) | <a href="https://github.com/prstrive/SuRF">Code</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
+                    <img src="pubs/noponerf/sample.png" alt="">
+                </div>
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
+                    <div class="intro_container">
+                        <p class="pub_title">Disentangled Generation and Aggregation for Robust Radiance Fields</p>
+                        <p class="pub_author">Shihe Shen*, Huachen Gao*, Wangze Xu, <strong>Rui Peng</strong>, Luyang Tang, Kaiqiang Xiong, Jianbo Jiao, Ronggang Wang</p>
+                        <p class="pub_conf"><i>ECCV, 2024</i></p>
+                        <p class="pub_link">Paper (<i>Patent Pending</i>) | Code (Coming...)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
+                    <img src="pubs/mpgs/sample.png" alt="">
+                </div>
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
+                    <div class="intro_container">
+                        <p class="pub_title">Excavating Multi-view Priors for Gaussian Splatting from Sparse Input Views</p>
+                        <p class="pub_author">Wangze Xu, Huachen Gao, Shihe Shen, <strong>Rui Peng</strong>, Jianbo Jiao, Ronggang Wang</p>
+                        <p class="pub_conf"><i>ECCV, 2024</i></p>
+                        <p class="pub_link">Paper (<i>Patent Pending</i>) | Code (Coming...)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
+                    <img src="pubs/gsmf/sample.png" alt="">
+                </div>
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
+                    <div class="intro_container">
+                        <p class="pub_title">4D Gaussian Splatting with Scale-aware Residual Field and Adaptive Optimization for Real-time rendering of temporally complex dynamic scenes</p>
+                        <p class="pub_author">Jinbo Yan, <strong>Rui Peng</strong>, Luyang Tang, Ronggang Wang</p>
+                        <p class="pub_conf"><i>ACMMM, 2024 (<strong>Oral</strong>)</i></p>
+                        <p class="pub_link"><a href="https://openreview.net/pdf?id=bgRADWSr6O">Paper</a> | Code (coming...)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
+                    <img src="pubs/hfpmvs/sample.png" alt="">
+                </div>
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
+                    <div class="intro_container">
+                        <p class="pub_title">High Fidelity Aggregated Planar Prior Assisted PatchMatch Multi-View Stereo</p>
+                        <p class="pub_author">Jie Liang, Rongjie Wang, <strong>Rui Peng</strong>, Zhe Zhang, Kaiqiang Xiong, Ronggang Wang</p>
+                        <p class="pub_conf"><i>ACMMM, 2024</i></p>
+                        <p class="pub_link"><a href="https://openreview.net/pdf?id=gEI5nN0Fpx">Paper</a> | Code (coming...)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
                     <img src="pubs/gens/sample.png" alt="">
                 </div>
-                <div class="col-md-8 pub_intro">
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
                     <div class="intro_container">
                         <p class="pub_title">GenS: Generalizable Neural Surface Reconstruction from Multi-View Images</p>
                         <p class="pub_author"><strong>Rui Peng</strong>, Xiaodong Gu, Luyang Tang, Shihe Shen, Fanqi Yu, Ronggang Wang</p>
@@ -38,11 +163,11 @@
                 </div>
             </div>
 
-            <div class="pub_item row">
-                <div class="col-md-4 thumbnail">
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
                     <img src="pubs/clmvsnet/sample.png" alt="">
                 </div>
-                <div class="col-md-8 pub_intro">
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
                     <div class="intro_container">
                         <p class="pub_title">CL-MVSNet: Unsupervised Multi-view Stereo with Dual-level Contrastive Learning</p>
                         <p class="pub_author">Kaiqiang Xiong, <strong>Rui Peng</strong>, Zhe Zhang, Tianxing Feng, Jianbo Jiao, Feng Gao, Ronggang Wang</p>
@@ -52,11 +177,11 @@
                 </div>
             </div>
 
-            <div class="pub_item row">
-                <div class="col-md-4 thumbnail">
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
                     <img src="pubs/geomvsnet/sample.png" alt="">
                 </div>
-                <div class="col-md-8 pub_intro">
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
                     <div class="intro_container">
                         <p class="pub_title">GeoMVSNet: Learning Multi-View Stereo with Geometry Perception</p>
                         <p class="pub_author">Zhe Zhang, <strong>Rui Peng</strong>, Yuxi Hu, Ronggang Wang</p>
@@ -66,11 +191,11 @@
                 </div>
             </div>
 
-            <div class="pub_item row">
-                <div class="col-md-4 thumbnail">
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
                     <img src="pubs/padnet/sample.png" alt="">
                 </div>
-                <div class="col-md-8 pub_intro">
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
                     <div class="intro_container">
                         <p class="pub_title">Pixelwise Adaptive Discretization with Uncertainty Sampling for Depth Completion</p>
                         <p class="pub_author"><strong>Rui Peng</strong>, Tao Zhang, Bing Li, Yitong Wang</p>
@@ -80,11 +205,11 @@
                 </div>
             </div>
 
-            <div class="pub_item row">
-                <div class="col-md-4 thumbnail">
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
                     <img src="pubs/unimvsnet/sample.png" alt="">
                 </div>
-                <div class="col-md-8 pub_intro">
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
                     <div class="intro_container">
                         <p class="pub_title">Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation</p>
                         <p class="pub_author"><strong>Rui Peng</strong>, Rongjie Wang, Zhenyu Wang, Yawen Lai, Ronggang Wang</p>
@@ -94,11 +219,11 @@
                 </div>
             </div>
 
-            <div class="pub_item row">
-                <div class="col-md-4 thumbnail">
+            <div class="item row media">
+                <div class="col-md-4 thumbnail align-self-center mx-auto">
                     <img src="pubs/epcdepth/sample.png" alt="">
                 </div>
-                <div class="col-md-8 pub_intro">
+                <div class="col-md-8 pub_intro align-self-center mx-auto">
                     <div class="intro_container">
                         <p class="pub_title">Excavating the Potential Capacity of Self-Supervised Monocular Depth Estimation</p>
                         <p class="pub_author"><strong>Rui Peng</strong>, Ronggang Wang, Yawen Lai, Luyang Tang, Tangang Cai</p>
@@ -109,13 +234,116 @@
             </div>
         </div>
 
+        <div id="education">
+            <h3>Education</h3><hr style="margin-top: 10px;"/>
+
+            <div class="item row media">
+                <div class="col-10 align-self-center mx-auto">
+                    <div class="intro_container">
+                        <h5 class="pub_title">Peking University</h5>
+                        <ul>
+                            <li>
+                                <strong>Doctor of Science in Computer Application Technology</strong>
+                            </li>
+                            <li>
+                                <i>9.2020 ~ 7.2025</i>
+                            </li>
+                        </ul>
+                        <!-- <p class="pub_author">Doctor of Science in Computer Application Technology</p>
+                        <p class="pub_conf"><i>9.2020 ~ 7.2025</i></p> -->
+                    </div>
+                </div>
+                <div class="col-2 align-self-center mx-auto badge">
+                    <img src="icon/pku.png" alt="">
+                </div>
+            </div>
+
+            <div class="item row media">
+                <div class="col-10 align-self-center mx-auto">
+                    <div class="intro_container">
+                        <h5 class="pub_title">Chongqing University</h5>
+                        <!-- <br> -->
+                        <ul>
+                            <li>
+                                <strong>Bachelor of Engineering in Computer Science and Technology</strong>
+                            </li>
+                            <li>
+                                Outstanding Graduates
+                            </li>
+                            <li>
+                                <i>9.2016 ~ 7.2020</i>
+                            </li>
+                        </ul>
+                        <!-- <p class="pub_author"></p> -->
+                        <!-- <p class="pub_link">Outstanding Graduates</p>
+                        <p class="pub_conf"><i>9.2016 ~ 7.2020</i></p> -->
+                    </div>
+                </div>
+                <div class="col-2 align-self-center mx-auto badge">
+                    <img src="icon/cqu.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="experience">
+            <h3>Experience</h3><hr style="margin-top: 10px;"/>
+
+            <div class="item row media">
+                <div class="col-10 align-self-center mx-auto">
+                    <div class="intro_container">
+                        <h5 class="pub_title">Aibaba XR Lab</h5>
+                        <ul>
+                            <li>
+                                Position: Research Scientist Intern
+                            </li>
+                            <li>
+                                Project: Generalizable and fast neural surface reconstruction.
+                            </li>
+                            <li>
+                                <i>6.2022 ~ 11.2022</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 align-self-center mx-auto badge">
+                    <img src="icon/alibaba.png" alt="">
+                </div>
+            </div>
+
+            <div class="item row media">
+                <div class="col-10 align-self-center mx-auto">
+                    <div class="intro_container">
+                        <h5 class="pub_title">Bytedance</h5>
+                        <ul>
+                            <li>
+                                Position: Research Scientist Intern at Bytedance AILab CV
+                            </li>
+                            <li>
+                                Project: Lightweight depth map completion from sparse priors.
+                            </li>
+                            <li>
+                                <i>11.2021 ~ 5.2022</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 align-self-center mx-auto badge">
+                    <img src="icon/bytedance.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
         <div id="awards">
-            <h3>Awards</h3><hr style="margin-top: 10px;"/>
+            <h3>Awards & Honers</h3><hr style="margin-top: 10px;"/>
             <ul>
                 <li>China National Scholarship</li>
                 <li>China National Inspirational Scholarship</li>
                 <li>First-Class Scholarship</li>
-                <li>Ping An Bank Scholarship </li>
+                <li>Ping An Bank Scholarship</li>
+                <li>Advanced Individual in Academic Innovation</li>
+                <li>Outstanding graduate of Chongqing University</li>
             </ul>
         </div>
 
@@ -123,7 +351,7 @@
             <h3>Service</h3><hr style="margin-top: 10px;"/>
             <ul>
                 <li>Journal Reviewer: TCSVT</li>
-                <li>Conference Reviewer: CVPR, ICCV, ACM MM</li>
+                <li>Conference Reviewer: CVPR, ICCV, ACM MM, NeurIPS</li>
             </ul>
         </div>
         
@@ -142,45 +370,52 @@
         </center>
 
         <p style="width: 100%; text-align: center; font-weight: smaller">
-            <strong>©Rui Peng.</strong>  Last updated: 20th Feb., 2024.
+            <strong>©Rui Peng.</strong> All rights reserved.  Last updated: 9th Aug., 2024.
         </p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <script>
-        $(document).ready(function(){
-            function layout(){
-                $(".thumbnail").each(function(){
-                    $(this).children("img").css("margin-top", 0)
-                    $(this).next(".pub_intro").children(".intro_container").css("margin-top", 0)
-                    if ($(this).height() > $(this).children("img").height()) {
-                        $(this).children("img").css("margin-top", ($(this).height() - $(this).children("img").height()) / 2)
-                    } else {
-                        if ($(window).width() >= 768){
-                            $(this).next(".pub_intro").children(".intro_container").css("margin-top", ($(this).height() - $(this).next(".pub_intro").children(".intro_container").height())/2)
-                        } else {
-                            $(this).next(".pub_intro").children(".intro_container").css("margin-top", "10px")
-                        }
-                    }
-                })
-                if ($(window).width() >= 768) {
-                    var intro_height = $("#me_intro").height();
-                    var img_height = $("#me_picture img").height();
-                    $("#me_picture img").css("margin-top", (intro_height-img_height)/2)
-                }
-                else {
-                    $("#me_picture img").css("margin-top", "0")
+
+        var header = $('#nav');
+        var scrollDelta = 10;
+        var scrollOffset = 200;
+        var isScroll = false;
+        var previousTop = 0;
+        var currentTop = 0;
+        
+        
+        $(window).scroll(function() {
+            if (!isScroll) {
+                isScroll = true;
+                (window.requestAnimationFrame)
+                    ? requestAnimationFrame(autoHideHeader)
+                    : setTimeout(autoHideHeader, 250);
+            }
+        });
+        
+        function autoHideHeader() {
+            currentTop = $(window).scrollTop();
+        
+            if (previousTop >= currentTop) {
+                if (previousTop - currentTop >= scrollDelta) {
+                    header.removeClass('is-hide');
                 }
             }
+            else {
+                if (currentTop - previousTop >= scrollDelta && currentTop > scrollOffset) {
+                    header.addClass('is-hide');
+                }
+            }
+        
+            previousTop = currentTop;
+            isScroll = false;
+        }
 
-            layout()
-
-            $(window).on('resize', function(){
-                layout()
-            })
-        })
     </script>
+
 </body>
  
 </html>
