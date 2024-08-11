@@ -382,7 +382,7 @@
 
         var header = $('#nav');
         var scrollDelta = 10;
-        var scrollOffset = 200;
+        var scrollOffset = 150;
         var isScroll = false;
         var previousTop = 0;
         var currentTop = 0;
@@ -401,7 +401,7 @@
             currentTop = $(window).scrollTop();
         
             if (previousTop >= currentTop) {
-                if (previousTop - currentTop >= scrollDelta) {
+                if (previousTop - currentTop >= scrollDelta || currentTop < scrollOffset) {
                     header.removeClass('is-hide');
                 }
             }
