@@ -244,7 +244,7 @@
             <h3>Education</h3><hr style="margin-top: 10px;"/>
 
             <div class="item row media">
-                <div class="col-10 align-self-center mx-auto">
+                <div class="col-9 col-sm-10 align-self-center mx-auto">
                     <div class="intro_container">
                         <h5 class="pub_title">Peking University</h5>
                         <ul>
@@ -259,13 +259,13 @@
                         <p class="pub_conf"><i>9.2020 ~ 7.2025</i></p> -->
                     </div>
                 </div>
-                <div class="col-2 align-self-center mx-auto badge">
+                <div class="col-3 col-sm-2 align-self-center mx-auto badge">
                     <img src="icon/pku.png" alt="">
                 </div>
             </div>
 
             <div class="item row media">
-                <div class="col-10 align-self-center mx-auto">
+                <div class="col-9 col-sm-10 align-self-center mx-auto">
                     <div class="intro_container">
                         <h5 class="pub_title">Chongqing University</h5>
                         <!-- <br> -->
@@ -285,7 +285,7 @@
                         <p class="pub_conf"><i>9.2016 ~ 7.2020</i></p> -->
                     </div>
                 </div>
-                <div class="col-2 align-self-center mx-auto badge">
+                <div class="col-3 col-sm-2 align-self-center mx-auto badge">
                     <img src="icon/cqu.png" alt="">
                 </div>
             </div>
@@ -296,7 +296,7 @@
             <h3>Experience</h3><hr style="margin-top: 10px;"/>
 
             <div class="item row media">
-                <div class="col-10 align-self-center mx-auto">
+                <div class="col-9 col-sm-10 align-self-center mx-auto">
                     <div class="intro_container">
                         <h5 class="pub_title">Aibaba XR Lab</h5>
                         <ul>
@@ -312,13 +312,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 align-self-center mx-auto badge">
+                <div class="col-3 col-sm-2 align-self-center mx-auto badge">
                     <img src="icon/alibaba.png" alt="">
                 </div>
             </div>
 
             <div class="item row media">
-                <div class="col-10 align-self-center mx-auto">
+                <div class="col-9 col-sm-10 align-self-center mx-auto">
                     <div class="intro_container">
                         <h5 class="pub_title">Bytedance</h5>
                         <ul>
@@ -334,7 +334,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 align-self-center mx-auto badge">
+                <div class="col-3 col-sm-2 align-self-center mx-auto badge">
                     <img src="icon/bytedance.png" alt="">
                 </div>
             </div>
@@ -361,13 +361,13 @@
             </ul>
         </div>
         
-        <p style="width: 100%; text-align: center; visibility: hidden;" id="conter">
+        <!-- <p style="width: 100%; text-align: center; visibility: hidden; overflow: hidden" id="conter">
             <small>
                 This page has been visited for
                 <a href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?prstrive" border="0" alt="Free Hit Counters"></a>
                 times
             </small>
-        </p>
+        </p> -->
 
         <center>
             <div id="visitor" class="col-4 col-sm-3" align="center">
@@ -391,11 +391,6 @@
         var isScroll = false;
         var previousTop = 0;
         var currentTop = 0;
-
-        $(".clstrm_outer, .clstrm_inner, .clstrm_bottom_shadow, .clstrm_map, .clstrm_inner_shadow").css({"height": $("#visitor").css("width")})
-        $(window).resize(function() {
-            $(".clstrm_outer, .clstrm_inner, .clstrm_bottom_shadow, .clstrm_map, .clstrm_inner_shadow").css({"height": $("#visitor").css("width")})
-        })
         
         
         $(window).scroll(function() {
