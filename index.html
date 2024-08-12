@@ -370,7 +370,7 @@
         </p>
 
         <center>
-            <div class="col-sm-3" align="center">
+            <div id="visitor" class="col-sm-3" align="center">
                 <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=S3rhCjjVDFXozOj-QK5nlSnd9d5J5mqi3eoAaIc3Ojw"></script>
             </div>
         </center>
@@ -385,13 +385,17 @@
 
     <script>
 
+        $(".clstrm_outer, .clstrm_inner, .clstrm_bottom_shadow, .clstrm_map, .clstrm_inner_shadow").css({"height": $("#visitor").width()})
+        $(screen).resize(function() {
+            $(".clstrm_outer, .clstrm_inner, .clstrm_bottom_shadow, .clstrm_map, .clstrm_inner_shadow").css({"height": $("#visitor").width()})
+        })
+
         var header = $('#nav');
         var scrollDelta = 10;
         var scrollOffset = 150;
         var isScroll = false;
         var previousTop = 0;
         var currentTop = 0;
-        
         
         $(window).scroll(function() {
             if (!isScroll) {

@@ -146,6 +146,10 @@ body {
     color: black;
 }
 
+.clstrm_outer, .clstrm_inner, .clstrm_bottom_shadow, .clstrm_map, .clstrm_inner_shadow {
+    width: 100%;
+}
+
 .item {
     margin-bottom: 20px;
     margin-left: 0px;
