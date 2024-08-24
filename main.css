@@ -4,7 +4,7 @@ body {
 
 #container {
     /* background-color: antiquewhite; */
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
     margin-top: 0px;
     margin-bottom: 20px;
     background-color: white;
@@ -110,9 +110,18 @@ body {
     width: 100%;
 }
 
+.thumbnail {
+    overflow: hidden;
+}
+
 .thumbnail img {
     width: 100%;
+    transition: transform 0.5s;
 }
+
+/* .thumbnail img:hover {
+    transform: matrix(1.2, 0, 0, 1.2, 100, 100);
+} */
 
 .pub_intro {
     text-align: justify;
