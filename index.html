@@ -363,7 +363,7 @@
                 <li>First-Class Scholarship</li>
                 <li>Ping An Bank Scholarship</li>
                 <li>Advanced Individual in Academic Innovation</li>
-                <li>Outstanding graduate of Chongqing University</li>
+                <li>Outstanding Graduates of Chongqing University</li>
             </ul>
         </div>
 
@@ -399,60 +399,65 @@
 
     <script>
 
-        var header = $('#nav');
-        var scrollDelta = 10;
-        var scrollOffset = 150;
-        var isScroll = false;
-        var previousTop = 0;
-        var currentTop = 0;
-        
-        
-        $(window).scroll(function() {
-            if (!isScroll) {
-                isScroll = true;
-                (window.requestAnimationFrame)
-                    ? requestAnimationFrame(autoHideHeader)
-                    : setTimeout(autoHideHeader, 250);
-            }
-        });
-        
-        function autoHideHeader() {
-            currentTop = $(window).scrollTop();
-        
-            if (previousTop >= currentTop) {
-                if (previousTop - currentTop >= scrollDelta || currentTop < scrollOffset) {
-                    header.removeClass('is-hide');
-                }
-            }
-            else {
-                if (currentTop - previousTop >= scrollDelta && currentTop > scrollOffset) {
-                    header.addClass('is-hide');
-                }
-            }
-        
-            previousTop = currentTop;
-            isScroll = false;
-        }
+        $(document).ready(function(){
 
-        $(".thumbnail").mousemove(function(e){
-            var ol = $(this).offset().left
-            var otop = $(this).offset().top
-            var l = e.pageX
-            var top =  e.pageY
-            var cw = $(this).width()
-            var ch = $(this).height()
-            var cw_img = $(this).children("img").width() * 2.0
-            var ch_img = $(this).children("img").height() * 2.0
-            var tx =((cw_img - cw) / 2 * ((l - ol) - cw/2) / (cw/2)) * -1
-            var ty = ((ch_img - ch) / 2 * ((top - otop) - ch/2) / (ch/2)) * -1
-            $(this).children("img").css({"transform": "matrix(2.0, 0, 0, 2.0,"+tx+", " + ty + ")"})
-        });
+            var header = $('#nav');
+            var scrollDelta = 10;
+            var scrollOffset = 150;
+            var isScroll = false;
+            var previousTop = 0;
+            var currentTop = 0;
+            
+            
+            $(window).scroll(function() {
+                if (!isScroll) {
+                    isScroll = true;
+                    (window.requestAnimationFrame)
+                        ? requestAnimationFrame(autoHideHeader)
+                        : setTimeout(autoHideHeader, 250);
+                }
+            });
+            
+            function autoHideHeader() {
+                currentTop = $(window).scrollTop();
+            
+                if (previousTop >= currentTop) {
+                    if (previousTop - currentTop >= scrollDelta || currentTop < scrollOffset) {
+                        header.removeClass('is-hide');
+                    }
+                }
+                else {
+                    if (currentTop - previousTop >= scrollDelta && currentTop > scrollOffset) {
+                        header.addClass('is-hide');
+                    }
+                }
+            
+                previousTop = currentTop;
+                isScroll = false;
+            }
 
-        $(".thumbnail").hover(function(){
-            $(this).children("img").css({"transform": "matrix(2.0, 0, 0, 2.0, 0, 0)"})
-        }, function(){
-            $(this).children("img").css({"transform": "matrix(1, 0, 0, 1, 0, 0)"})
-        })
+            $(".thumbnail").mousemove(function(e){
+                var ol = $(this).offset().left
+                var otop = $(this).offset().top
+                var l = e.pageX
+                var top =  e.pageY
+                var cw = $(this).width()
+                var ch = $(this).height()
+                var cw_img = $(this).children("img").width() * 2.0
+                var ch_img = $(this).children("img").height() * 2.0
+                var tx =((cw_img - cw) / 2 * Math.max(Math.min(((l - ol) - cw/2) / (cw/4), 1), -1)) * -1
+                var ty = ((ch_img - ch) / 2 * Math.max(Math.min(((top - otop) - ch/2) / (ch/4), 1), -1)) * -1
+                console.log(tx+", "+ty)
+                $(this).children("img").css({"transform": "matrix(2.0, 0, 0, 2.0,"+tx+", " + ty + ")"})
+            });
+
+            $(".thumbnail").hover(function(){
+                $(this).children("img").css({"transform": "matrix(2.0, 0, 0, 2.0, 0, 0)"})
+            }, function(){
+                $(this).children("img").css({"transform": "matrix(1, 0, 0, 1, 0, 0)"})
+            })
+
+        });
 
     </script>
 
