@@ -1,4 +1,4 @@
-# prstrive.github.io
+# Homepage of Rui Peng
 
 This is the homepage designed and implemented by [Rui Peng](https://prstrive.github.io/), and all rights are reserved.
 
