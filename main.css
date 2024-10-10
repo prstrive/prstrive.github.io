@@ -143,6 +143,18 @@ body {
     text-align: left;
 }
 
+.pub_conf {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pub_conf button {
+    text-align: center;
+    border: none;
+    background-color: #FDF5E6;
+    border-radius: 5%;
+}
+
 .pub_link a {
     text-decoration: none;
 }
