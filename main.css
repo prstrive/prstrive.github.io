@@ -137,6 +137,13 @@ body {
 
 .pub_title {
     font-weight: bold;
+    /* line-height: 1.0; */
+    padding-bottom: 5px;
+}
+
+.pub_author {
+    /* line-height: 1.0; */
+    padding-bottom: 5px;
 }
 
 .pub_author, .pub_conf, .pub_link {
@@ -144,7 +151,6 @@ body {
 }
 
 .pub_conf {
-    padding-top: 5px;
     padding-bottom: 5px;
 }
 
